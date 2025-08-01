@@ -94,7 +94,7 @@ const App = () => {
   const handleRunCode = async () => {
     try {
       setOutput("Running...");
-      const resp = await axios.post("http://localhost:5000/run-code", {
+      const resp = await axios.post("https://echoroom-3yjo.onrender.com/run-code", {
         language,
         code,
       });
